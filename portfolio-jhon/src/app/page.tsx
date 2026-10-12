@@ -1,3 +1,5 @@
+import { HeroSlider } from "../components/HeroSlider";
+
 export default function Home() {
   return (
     <>
@@ -23,42 +25,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero-slider" id="home">
-        <div className="slider-container">
-          <div className="slide active">
-            <div className="slide-content">
-              <div className="slide-number">01</div>
-              <div className="slide-category">Investigación e Innovación</div>
-              <h1 className="slide-title">
-                <span className="line">Jhon Edilberto</span>
-                <span className="line">Monroy Barrios</span>
-                <span className="line">Maestro en Ciencias Informáticas</span>
-              </h1>
-              <p className="slide-description">
-                Profesional con sólida experiencia en el desarrollo de aplicaciones y sistemas de información. 
-                Especialista en Interacción Humano-Computador, Informática Educativa e Inteligencia Artificial.
-              </p>
-              <a href="#portfolio" className="btn-primary">Ver proyectos</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="slider-controls">
-          <button className="slider-btn prev" id="prevSlide">←</button>
-          <button className="slider-btn next" id="nextSlide">→</button>
-        </div>
-
-        <div className="slider-indicators">
-          <span className="indicator active" data-slide="0"></span>
-          <span className="indicator" data-slide="1"></span>
-          <span className="indicator" data-slide="2"></span>
-        </div>
-
-        <div className="scroll-down">
-          <span>Desplázate para descubrir</span>
-          <div className="scroll-arrow"></div>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* Quick Links */}
       <div className="quick-links">
@@ -103,9 +70,12 @@ export default function Home() {
             </div>
 
             <div className="about-image">
-              <div className="image-placeholder">
-                👤
-              </div>
+              <img
+                src="/images/about.jpg"
+                alt="Mirador de Yanahuara con el volcán Misti al fondo, Arequipa, Perú"
+                className="about-photo"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -343,7 +313,7 @@ export default function Home() {
           </div>
 
           <div className="resume-download">
-            <a href="#" className="btn-primary">
+            <a href="/Professional_CV_Jhon.pdf" download="CV_Jhon_Edilberto_Monroy_Barrios.pdf" className="btn-primary">
               ⬇ Descargar CV completo
             </a>
           </div>
@@ -363,7 +333,7 @@ export default function Home() {
           <div className="portfolio-grid">
             <div className="portfolio-item">
               <div className="portfolio-image">
-                <div className="image-placeholder">🎥</div>
+                <img src="/images/pub-1.jpg" alt="Plaza de Armas de Arequipa, Perú" loading="lazy" />
               </div>
               <div className="portfolio-info">
                 <span className="portfolio-date">2023</span>
@@ -382,7 +352,7 @@ export default function Home() {
 
             <div className="portfolio-item">
               <div className="portfolio-image">
-                <div className="image-placeholder">🎮</div>
+                <img src="/images/pub-2.jpg" alt="Monasterio de Santa Catalina, Arequipa, Perú" loading="lazy" />
               </div>
               <div className="portfolio-info">
                 <span className="portfolio-date">2017</span>
@@ -401,7 +371,7 @@ export default function Home() {
 
             <div className="portfolio-item">
               <div className="portfolio-image">
-                <div className="image-placeholder">🔧</div>
+                <img src="/images/pub-3.jpg" alt="Volcán Misti desde la ciudad de Arequipa, Perú" loading="lazy" />
               </div>
               <div className="portfolio-info">
                 <span className="portfolio-date">2018</span>
@@ -419,7 +389,7 @@ export default function Home() {
 
             <div className="portfolio-item">
               <div className="portfolio-image">
-                <div className="image-placeholder">📐</div>
+                <img src="/images/pub-4.jpg" alt="Arcos de la plaza de Yanahuara con el volcán Misti, Arequipa, Perú" loading="lazy" />
               </div>
               <div className="portfolio-info">
                 <span className="portfolio-date">2017</span>
