@@ -1,0 +1,29 @@
+# Fuentes originales de la plantilla Nastik (licencia comercial — no publicar)
+nastik.webredox.net.zip
+nastik.webredox.net/
+
+# Dependencias y builds (en cualquier nivel)
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Entorno
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
